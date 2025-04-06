@@ -1,0 +1,170 @@
+%-------------------------
+% Resume in Latex
+% Author : William Spongberg
+% Credit: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large William Spongberg} & Email: \href{mailto:william@spongberg.dev}{william@spongberg.dev}\\
+  \href{https://william.spongberg.dev}{william.spongberg.dev} & Mobile: +61 475 414 852 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Melbourne}{Melbourne, Australia}
+{Bachelor of Computing and Software Systems}{Feb. 2022 -- June. 2025}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+{TransitEye}{React, TypeScript, Postgres}{Personal Project}
+{}
+\resumeItemListStart
+\resumeItem{}{Engineered an open-source, full-stack web application to report and track public transport incidents in Melbourne.}
+\resumeItem{}{Implemented an interactive map and custom heatmap using React and Leaflet to ensure easy visualisation and accessibility.}
+\resumeItem{}{Utilised Supabase for user authentication and data storage, ensuring secure and fast access to the application.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Applify}{JavaScript, Generative AI}{Personal Project}
+{}
+\resumeItemListStart
+\resumeItem{}{Built a Chrome web extension to analyse job board information and give realtime feedback to active users.}
+\resumeItem{}{Utilised Google's local Gemini Nano API to generate tailored resume suggestions and improvements.}
+\resumeItemListEnd
+
+\resumeSubheading{Momentum Master App}
+{TypeScript, Auth0, AWS, CICD, Flutter}{Team Member \& Full-Stack Developer}{}
+\resumeItemListStart
+\resumeItem{}{Developed a full-stack career progression application as part of a team of 5 for the client NoMoss.}
+\resumeItem{}{Collaborated to complete 15+ epics over 12 weeks to align with the Agile methodology and client requirements.}
+\resumeItem{}{Implemented and managed CICD pipelines via Vercel and GitLab for efficient deployment and testing.}
+\resumeItem{}{Created fully featured REST API with 20+ endpoints for effective and secure data storage in AWS.}
+\resumeItem{}{Created 80+ unit tests for the backend to ensure code quality and API security is maintained.}
+\resumeItem{}{Conducted code reviews and provided constructive feedback to team members over scrums to enhance code quality.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% Data Annotation
+\resumeSubheading
+{Data Annotation}{Remote}
+{AI Reinforcement}{Apr 2024 - Present}
+\resumeItemListStart
+\resumeItem{}{Evaluated and annotated 1000+ lines of code across a variety of languages for AI models, ensuring high-quality training datasets.}
+\resumeItem{}{Wrote detailed reports on code quality and custom solutions, providing valuable feedback to developers and AI models alike.}
+\resumeItemListEnd
+
+% Coles
+\resumeSubheading
+{Coles Group}{Melbourne, Australia}
+{Retail Associate}{Dec 2020 - Present}
+\resumeItemListStart
+\resumeItem{}{Collaborated with team of 5-10 daily to unload and stock 3000+ items daily, improving store efficiency and customer satisfaction.}
+\resumeItem{}{Gained experience in customer service and retail operations, enhancing communication skills.}
+\resumeItem{}{Assisted in training new staff, fostering a collaborative work environment and improving team performance.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------VOLUNTEERING-----------------
+\section{Volunteering}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Fitzroy High School}{Melbourne, Australia}
+{Volunteer Teacher's Assistant}{Apr 2024 - May 2024}
+\resumeItemListStart
+\resumeItem{}{Assisted teachers in classroom management and provided both educational support and mentorship to students.}
+\resumeItem{}{Organised educational activities and resources to enhance student engagement and my own understanding of effective communication, leadership and alternative learning.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{\textbf{Languages:} Java, JavaScript, TypeScript, Python, C, C\#, SQL, Flutter, Prolog, Haskell}
+\item{\textbf{Technologies:} Git, VSCode, IntelliJ, MySQL, Android Studio, Flutter, Node.js, Supabase, AWS}
+\item{\textbf{Project Management \& Collaboration:} Slack, Jira, Confluence, Trello, Agile Methodology}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
